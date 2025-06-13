@@ -1,0 +1,227 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{--}
+\renewcommand\labelitemii{--}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[label=--]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape BENJAMIN LITTLE} \\ \vspace{1pt}
+    \scriptsize \href{mailto:ben.little@queensu.ca}{\faEnvelope \ ben.little@queensu.ca} \textbar{} \faPhone \ (819) 639-9898 \textbar{} \href{https://www.linkedin.com/in/your-linkedin-here/}{\faLinkedin \ LinkedIn} \textbar{} \href{https://github.com/your-github-here}{\faGithub \ GitHub}
+\end{center}
+\vspace{-15pt}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Smith School of Business, Queen's University}{Kingston, ON}
+      {Bachelor of Commerce (Finance) with a dual degree in Computer Science at the Queen's School of Computing}{Class of 2027}
+      \resumeItemListStart
+        \resumeItem{Academic accomplishments: William Rutherford Dunlop Scholarship, GPA: 3.87}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Ashbury College}{Ottawa, ON}
+      {International Baccalaureate Diploma}{2018-2022}
+      \resumeItemListStart
+        \resumeItem{Additional Secondary School Diplomas: Ontario Secondary School Diploma, Ashbury Diploma}
+        \resumeItem{Academic accomplishments: GPA: 4.00/97\%/A+, Ontario Academic Scholar, Academic Honour Role, Ashbury Merit Scholarship}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PROFESSIONAL EXPERIENCE-----------
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {AXL Venture Studios}{Toronto, ON}
+      {Product Development Analyst Intern}{2025}
+      \resumeItemListStart
+        \resumeItem{Engineered AI-driven applications for AXL's clients and the broader technology market, leveraging expertise in Python, React Native, Google Cloud Platform, and a variety of other tools.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Envari Energy Solutions \textbar{} Hydro Ottawa}{Ottawa, ON}
+      {Energy \& Infrastructure Finance and Accounting Intern}{2023}
+      \resumeItemListStart
+        \resumeItem{Spearheaded conversion of legacy Excel VBA-based accounting software into Google Sheets JavaScript software, reducing effort and time for accounting team, and consolidated internal accounting practices from Microsoft Office to Google Suite}
+        \resumeItem{Aided senior accountants with monthly and quarterly closing processes (including covering regular staff during labour disruption), increasing understanding of accounting practices, Excel, and B2B software like Esker, Salesforce, and Workday}
+        \resumeItem{Drove material cost savings by revising fleet rates, collaborated with senior management to transition to cloud computing, and developed educational videos on company practices}
+        \resumeItem{Developed skills including communication and collaboration, data interpretation, organization, Excel, and understanding of practical applications of AI in a professional services setting}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Dentons Canada LLP}{Ottawa, ON}
+      {Summer Intern}{2021 \& 2022}
+      \resumeItemListStart
+        \resumeItem{Completed two summer internship tenures at one of the world's largest corporate law firms, Dentons Canada LLP}
+        \resumeItem{Gathered and summarized over 200 data points on equity compensation plans for TSX technology issuers}
+        \resumeItem{Trained and analyzed AI-powered Legal Inference Transformation Engine, Luminance, in a small group to conduct due diligence and recognize certain data types within different forms of contracts to increase lawyer efficiency}
+        \resumeItem{Developed skills including communication and collaboration, data interpretation, organization, Excel, and understanding of practical applications of AI in a professional services setting}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeSubheading
+          {stensyl}{Kingston, ON}
+          {Mobile App Developer}{2025}
+          \resumeItemListStart
+            \resumeItem{Utilized HTML, CSS, JavaScript, TypeScript, React Native, Expo, Node.js, SQL, \& Supabase to create a study-based social media platform for students to track and share their study habits with peers}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, Java, HTML/CSS, JavaScript, TypeScript} \\
+     \textbf{Developer Tools}{: GitHub, VS Code, Eclipse, Cursor, PyCharm, IntelliJ} \\
+     \textbf{Technologies/Frameworks}{: React, React Native} \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+%-----------EXTRACURRICULAR EXPERIENCE-----------
+\section{Extracurricular Experience}
+    \resumeSubHeadingListStart
+      \resumeSubheading
+        {Commerce \& Engineering Environmental Conference (CEEC)}{Kingston, ON}
+        {First-Year Representative}{2022--2023}
+        \resumeItemListStart
+            \resumeItem{Co-organized 33rd annual Commerce \& Engineering Environmental Conference, Canada's premier undergraduate sustainability conference, bringing together over 100 delegates to discuss sustainable innovations and the rapidly evolving green industry}
+            \resumeItem{Facilitated Sponsorship Team in procuring over \$20,000 in funding from high-profile corporations such as Bain \& Company}
+            \resumeItem{Planned and organized First-Year Project focusing on reducing organic and plastic waste in Queen's University dining halls}
+        \resumeItemListEnd
+      \resumeSubheading
+        {Ashbury College Student Government}{Ottawa, ON}
+        {Connaught House Captain}{2021--2022}
+        \resumeItemListStart
+            \resumeItem{Elected by the Ashbury community as leader and representative of Connaught House, one of Ashbury's four governing houses}
+            \resumeItem{Developed leadership, organization, and public speaking skills by presiding over 200 Connaught House members and the Connaught House Council, planning house competitions, and creating house merchandise to foster school spirit}
+        \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------ADDITIONAL INFORMATION & INTERESTS-----------
+\section{Additional Information \& Interests}
+    \resumeSubHeadingListStart
+      \resumeItem{}
+        \resumeItemListStart
+            \resumeItem{IB \& OSSD Economics \& Mathematics Tutor}
+            \resumeItem{CSIA Certified Ski Instructor}
+        \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+\end{document}
